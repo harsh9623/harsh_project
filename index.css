@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ #navigation{
+    margin-top: 0px;
+    /* background-image: linear-gradient(to right, rgb(161, 42, 197), rgba(150, 59, 178, 0.6), rgb(141, 36, 173)); */
+    padding: 0px;
+    height: 50px;
+ }
+ #nav-left{
+    width: 30%;
+    height: auto;
+    align-items: center;
+    float: left;
+    text-align: center; 
+    font-size: 2rem;
+    font-family:cursive;
+    color: azure;
+ }
+ #nav-right{
+    width: 70%;
+    height: auto;
+    padding-left: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+ }
+ #nav-a{
+   margin-left: 10%;
+   margin-top: 12px;
+   color: rgb(255, 255, 255);
+   font-size: 1.3rem;
+ }
+
+ #home-img{
+   width: 100%;
+   /* height: calc(100vh - 50px); */
+   height: 100vh;
+   margin-top: -50px;
+   background-color: burlywood;
+   background-image: url("purple_back.jpg");
+ }
+
+ #home-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: cursive;
+    color: azure;
+    margin-left: -30%;
+    left: 0px;
+ }
+ #myname{
+    font-size: 3rem;
+    font-family: cursive;
+    color: rgb(6, 176, 255);
+ }
+ #home-right{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   text-align: center;
+   justify-content: space-evenly;
+   font-size: 2rem;
+   font-family: cursive;
+   color: azure;
+}
+
+#inner-details{
+   display: flex;
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   margin-top: 20%;
+   margin-left: 10%;
+}
+
+
+
+
+
+ @media screen and (max-width: 768px) {
+    #nav-left{
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    #nav-right{
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    #nav-a{
+        margin-left: 0;
+    }
+   
+ }
+
+   @media screen and (max-width: 480px) {
+      #navigation{
+         margin-top: 0px;
+         /* background-image: linear-gradient(to right, rgb(161, 42, 197), rgba(150, 59, 178, 0.6), rgb(141, 36, 173)); */
+         padding: 0px;
+         height: 80px;
+      }
+       #nav-left{
+            font-size: 1.5rem;
+       }
+       #nav-a{
+            font-size: 1.0rem;
+            margin-left: 5%;
+            padding-bottom: 5px;
+       }
+       #nav-right{
+         font-size: 1.8rem;
+         background-image: linear-gradient(to right, rgb(161, 42, 197), rgba(150, 59, 178, 0.6), rgb(141, 36, 173));
+         
+    }
+    #home-img{
+      margin-top: -100px;
+    }
+
+   }
+
+
