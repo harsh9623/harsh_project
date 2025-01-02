@@ -45,27 +45,34 @@
    background-image: url("purple_back.jpg");
  }
 
- #home-left{
-    width: 50%;
-    height: 100%;
-    float: left;
-    text-align: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-family: cursive;
-    color: azure;
-    margin-left: -30%;
-    left: 0px;
- }
- #myname{
-    font-size: 3rem;
-    font-family: cursive;
-    color: rgb(6, 176, 255);
- }
- #home-right{
+ #home-left {
    width: 50%;
    height: 100%;
-   display: flex;
+   float: left;
+   text-align:left;
+   justify-content: center;
+   font-size: 2rem;
+   font-family: 'Poppins', sans-serif;
+   color: azure;
+   margin-left: -30%;
+   padding-left: 6%;
+   padding-top: 6%;
+}
+
+#myname {
+   font-size: 3rem;
+   font-family: cursive;
+   color: rgb(6, 176, 255);
+}
+h3{
+   font-size: 2rem;
+   font-family: cursive;
+}
+
+#home-right {
+   width: 50%;
+   height: 100%;
+   display: inline;
    text-align: center;
    justify-content: space-evenly;
    font-size: 2rem;
@@ -73,13 +80,34 @@
    color: azure;
 }
 
-#inner-details{
+#inner-details {
    display: flex;
+   flex-direction: column;
+   align-items: flex-start;
    width: 100%;
    height: fit-content;
-   display: flex;
    margin-top: 20%;
-   margin-left: 10%;
+}
+
+#intro {
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   text-align: left;
+}
+
+#intro p,
+#intro h3,
+#intro span {
+   font-size: 3rem;
+   margin: 10px 0;
+}
+#element {
+   display: inline; /* Ensure the typed text and cursor are inline */
+   color: rgb(39, 255, 11);
+}
+#naming{
+   font-size: 3rem;
 }
 
 
@@ -127,6 +155,45 @@
       margin-top: -100px;
     }
 
-   }
+    #home-left, #home-right {
+      width: 100%;
+      float: none;
+      margin-left: 0;
+      padding-left: 4%;
+      padding-right: 4%;
+      padding-top: 0%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+  }
+
+  #inner-details{
+   margin-left: 0%;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+
+  }
+  #intro{
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+  }
+  #intro p,
+  #intro h3,
+  #intro span {
+      font-size: 2rem;
+  }
+
+  #myname {
+      font-size: 2.5rem;
+  }
+
+  h3 {
+      font-size: 1.5rem;
+  }
+}
+   
+   
 
 
