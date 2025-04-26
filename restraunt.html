@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiv Darshan | Premium Catering Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        padding: 2rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
+      }
+
+      h1 {
+        font-size: 16px;
+        margin-top: 0;
+      }
+
+      p {
+        color: rgb(107, 114, 128);
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+      }
+
+      .card {
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 16px;
+        border: 1px solid lightgray;
+        border-radius: 16px;
+      }
+
+      .card p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* //////////////////////////////////////////////////////////// */
+
+
+
+      .hero-bg {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .menu-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .testimonial-card {
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: scale(1.03);
+      }
+
+      .floating {
+        animation: floating 3s ease-in-out infinite;
+      }
+
+      @keyframes floating {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10 top-0">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-4">
+            <div class="flex items-center">
+              <i class="fas fa-utensils text-amber-600 text-3xl mr-2"></i>
+              <span class="font-bold text-2xl text-gray-800"
+                >Shiv Darshan</span
+              >
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#home"
+              class="text-gray-800 hover:text-amber-600 transition"
+              >Home</a
+            >
+            <a
+              href="#services"
+              class="text-gray-800 hover:text-amber-600 transition"
+              >Services</a
+            >
+            <a
+              href="#menu"
+              class="text-gray-800 hover:text-amber-600 transition"
+              >Menu</a
+            >
+            <a
+              href="#about"
+              class="text-gray-800 hover:text-amber-600 transition"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-800 hover:text-amber-600 transition"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button class="outline-none mobile-menu-button">
+              <i class="fas fa-bars text-gray-800 text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero-bg min-h-screen flex items-center justify-center text-white pt-20"
+    >
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Exquisite Catering for
+          <span class="text-amber-400">Every Occasion</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-white">
+          From intimate gatherings to grand celebrations, we craft unforgettable
+          culinary experiences tailored to your event.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#contact"
+            class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105"
+            >Get a Quote</a
+          >
+          <a
+            href="#menu"
+            class="bg-transparent hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 border-2 border-white rounded-full transition duration-300 transform hover:scale-105"
+            >View Menu</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Our <span class="text-amber-600">Services</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            We offer comprehensive catering solutions for all types of events,
+            ensuring a seamless experience from planning to execution.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition"
+          >
+            <div
+              class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="fas fa-glass-cheers text-amber-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-4">Wedding Catering</h3>
+            <p class="text-gray-600 text-center">
+              Elegant and customized menus to make your special day even more
+              memorable with exquisite cuisine and impeccable service.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition"
+          >
+            <div
+              class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="fas fa-briefcase text-amber-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-4">Corporate Events</h3>
+            <p class="text-gray-600 text-center">
+              Professional catering services for meetings, conferences, and
+              corporate gatherings that impress your guests and clients.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition"
+          >
+            <div
+              class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="fas fa-home text-amber-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-4">Private Parties</h3>
+            <p class="text-gray-600 text-center">
+              From birthday celebrations to anniversary parties, we bring
+              restaurant-quality dining to your home or chosen venue.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Our <span class="text-amber-600">Signature Menus</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Explore our curated selection of culinary delights, each crafted
+            with the finest ingredients and expert techniques.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Menu Item 1 -->
+          <div
+            class="menu-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+                alt="Gourmet Buffet"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110"
+              />
+              <div
+                class="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-bold"
+              >
+                Most Popular
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Gourmet Buffet</h3>
+              <p class="text-gray-600 mb-4">
+                A lavish spread featuring international cuisines with seasonal
+                specialties and chef's selections.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-gray-800">From $45/person</span>
+                <button
+                  class="text-amber-600 hover:text-amber-700 font-semibold"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu Item 2 -->
+          <div
+            class="menu-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://th.bing.com/th/id/OIP.fOZv3nTzZqRNj24_GfqJlgHaDw?rs=1&pid=ImgDetMain"
+                alt="Plated Dinner"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Plated Dinner Service</h3>
+              <p class="text-gray-600 mb-4">
+                Elegant multi-course meals served tableside for formal events
+                and sophisticated gatherings.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-gray-800">From $65/person</span>
+                <button
+                  class="text-amber-600 hover:text-amber-700 font-semibold"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu Item 3 -->
+          <div
+            class="menu-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300"
+          >
+            <div class="relative overflow-hidden h-64">
+              <img
+                src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1498&q=80"
+                alt="Cocktail Reception"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Cocktail Reception</h3>
+              <p class="text-gray-600 mb-4">
+                Stylish passed hors d'oeuvres and stationary displays perfect
+                for networking and social events.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-gray-800">From $35/person</span>
+                <button
+                  class="text-amber-600 hover:text-amber-700 font-semibold"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="#"
+            class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105"
+          >
+            View Full Menu Collection
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="lg:w-1/2 relative">
+            <img
+              src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Our Chef"
+              class="rounded-xl shadow-lg w-full"
+            />
+            <div
+              class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg w-3/4 floating"
+            >
+              <div class="flex items-center">
+                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-award text-amber-600 text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Award Winning</h4>
+                  <p class="text-sm text-gray-600">
+                    Best Catering Service 2023
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              Our <span class="text-amber-600">Culinary Story</span>
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Founded in 2010 by Executive Chef Michael Laurent, Gourmet
+              Delights began as a small passion project and has grown into one
+              of the most sought-after catering services in the region.
+            </p>
+            <p class="text-gray-600 mb-8">
+              Our team of culinary experts combines traditional techniques with
+              innovative approaches to create memorable dining experiences. We
+              source ingredients locally whenever possible, supporting
+              sustainable practices and regional producers.
+            </p>
+            <div class="grid grid-cols-2 gap-6 mb-8">
+              <div class="flex items-center">
+                <div class="bg-amber-100 p-2 rounded-full mr-3">
+                  <i class="fas fa-check text-amber-600"></i>
+                </div>
+                <span class="font-medium">100% Organic</span>
+              </div>
+              <div class="flex items-center">
+                <div class="bg-amber-100 p-2 rounded-full mr-3">
+                  <i class="fas fa-check text-amber-600"></i>
+                </div>
+                <span class="font-medium">Seasonal Menus</span>
+              </div>
+              <div class="flex items-center">
+                <div class="bg-amber-100 p-2 rounded-full mr-3">
+                  <i class="fas fa-check text-amber-600"></i>
+                </div>
+                <span class="font-medium">Custom Options</span>
+              </div>
+              <div class="flex items-center">
+                <div class="bg-amber-100 p-2 rounded-full mr-3">
+                  <i class="fas fa-check text-amber-600"></i>
+                </div>
+                <span class="font-medium">Dietary Accommodations</span>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105"
+            >
+              Meet Our Team
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-amber-600 text-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            What Our Clients Say
+          </h2>
+          <p class="max-w-2xl mx-auto opacity-90">
+            Hear from those who've experienced our catering services firsthand.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="testimonial-card bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm"
+          >
+            <div class="flex items-center mb-4">
+              <div class="text-amber-300 text-2xl mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="mb-6 italic">
+              "Shiv Darshan catered our wedding and exceeded all
+              expectations. The food was spectacular, the service impeccable,
+              and they handled every detail perfectly."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/43.jpg"
+                alt="Sarah J."
+                class="w-12 h-12 rounded-full mr-4 object-cover"
+              />
+              <div>
+                <h4 class="font-bold">Sarah Johnson</h4>
+                <p class="text-sm opacity-80">Wedding Client</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="testimonial-card bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm"
+          >
+            <div class="flex items-center mb-4">
+              <div class="text-amber-300 text-2xl mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="mb-6 italic">
+              "Our annual corporate gala has never received so many compliments
+              on the food. The presentation was stunning and the flavors were
+              extraordinary."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="David L."
+                class="w-12 h-12 rounded-full mr-4 object-cover"
+              />
+              <div>
+                <h4 class="font-bold">David Langley</h4>
+                <p class="text-sm opacity-80">Corporate Client</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="testimonial-card bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm"
+          >
+            <div class="flex items-center mb-4">
+              <div class="text-amber-300 text-2xl mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="mb-6 italic">
+              "I've used many caterers over the years, but Shiv Darshan
+              stands out for their creativity, flexibility, and consistently
+              delicious food. They're now my go-to for all events."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/65.jpg"
+                alt="Maria K."
+                class="w-12 h-12 rounded-full mr-4 object-cover"
+              />
+              <div>
+                <h4 class="font-bold">Maria Kowalski</h4>
+                <p class="text-sm opacity-80">Private Party Host</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Ready to <span class="text-amber-600">Plan Your Event?</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Contact us to discuss your catering needs and let us create a
+            customized proposal for your special occasion.
+          </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+          <div class="lg:w-1/2">
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-gray-700 font-medium mb-2"
+                    >Your Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition"
+                  />
+                </div>
+              </div>
+              <div>
+                <label for="phone" class="block text-gray-700 font-medium mb-2"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition"
+                />
+              </div>
+              <div>
+                <label
+                  for="event-type"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Event Type</label
+                >
+                <select
+                  id="event-type"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition"
+                >
+                  <option value="">Select an event type</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="private">Private Party</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Event Details</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 transform hover:scale-105"
+              >
+                Submit Request
+              </button>
+            </form>
+          </div>
+
+          <div class="lg:w-1/2">
+            <div class="bg-gray-50 p-8 rounded-xl h-full">
+              <h3 class="text-2xl font-bold text-gray-800 mb-6">
+                Contact Information
+              </h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="bg-amber-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-map-marker-alt text-amber-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">Our Location</h4>
+                    <p class="text-gray-600">
+                      123 Culinary Avenue, Foodie District, NY 10001
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-amber-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-phone-alt text-amber-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">Call Us</h4>
+                    <p class="text-gray-600">+1 (555) 123-4567</p>
+                    <p class="text-gray-600">Mon-Fri: 9am-6pm</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-amber-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-envelope text-amber-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">Email Us</h4>
+                    <p class="text-gray-600">info@gourmetdelights.com</p>
+                    <p class="text-gray-600">events@gourmetdelights.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-10">
+                <h4 class="font-bold text-gray-800 mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="bg-white p-3 rounded-full text-gray-700 hover:bg-amber-600 hover:text-white transition"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-white p-3 rounded-full text-gray-700 hover:bg-amber-600 hover:text-white transition"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-white p-3 rounded-full text-gray-700 hover:bg-amber-600 hover:text-white transition"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-white p-3 rounded-full text-gray-700 hover:bg-amber-600 hover:text-white transition"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <i class="fas fa-utensils text-amber-600 text-3xl mr-2"></i>
+              <span class="font-bold text-2xl">Shiv Darshan</span>
+            </div>
+            <p class="text-gray-400">
+              Creating memorable dining experiences through exceptional catering
+              services since 2010.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-amber-400 transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-amber-400 transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#menu"
+                  class="text-gray-400 hover:text-amber-400 transition"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-amber-400 transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-amber-400 transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-amber-400 transition"
+                  >Wedding Catering</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-amber-400 transition"
+                  >Corporate Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-amber-400 transition"
+                  >Private Parties</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-amber-400 transition"
+                  >Cocktail Receptions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-amber-400 transition"
+                  >Custom Menus</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+            <p class="text-gray-400 mb-4">
+              Subscribe to receive updates, special offers, and event planning
+              tips.
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-900"
+              />
+              <button
+                class="bg-amber-600 hover:bg-amber-700 px-4 py-2 rounded-r-lg transition"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm">
+            © 2023 Shiv Darshan Catering. All rights reserved.
+          </p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" class="text-gray-400 hover:text-amber-400 transition"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-gray-400 hover:text-amber-400 transition"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Simple JavaScript for mobile menu toggle (would be expanded in a real implementation)
+      document
+        .querySelector(".mobile-menu-button")
+        .addEventListener("click", function () {
+          // This would toggle a mobile menu in a complete implementation
+          alert("Mobile menu would open here in a complete implementation");
+        });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+    <p
+      style="
+        border-radius: 8px;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+        margin-top: 16px;
+        position: fixed;
+        left: 8px;
+        bottom: 8px;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 4px 8px;
+      "
+    >
+      Made with
+      <img
+        src="https://enzostvs-deepsite.hf.space/logo.svg"
+        alt="DeepSite Logo"
+        style="
+          width: 16px;
+          height: 16px;
+          vertical-align: middle;
+          display: inline-block;
+          margin-right: 3px;
+          filter: brightness(0) invert(1);
+        "
+      /><a
+        href="https://enzostvs-deepsite.hf.space"
+        style="color: #fff; text-decoration: underline"
+        target="_blank"
+        >DeepSite</a
+      >
+      - 🧬
+      <a
+        href="https://enzostvs-deepsite.hf.space?remix=harsh1722/restraunt"
+        style="color: #fff; text-decoration: underline"
+        target="_blank"
+        >Remix</a
+      >
+    </p>
+  </body>
+</html>
